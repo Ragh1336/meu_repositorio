@@ -1,0 +1,113 @@
+/*Light Mode*/
+@media (prefers-color-scheme: light) {
+    :root {
+        --text-color: #f3cc84;
+        --background-color: #bdaea8;
+    }
+    .cartao {
+        --background-color: #6d5f5b;
+    }
+
+    .cartao header h2 {
+        color: #ffa600;
+    }
+
+    header h1 {
+        --text-color: #463e3c;
+    }
+
+    footer p {
+        --text-color: #463e3c;
+    }
+    
+}
+
+/*Dark Mode*/
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #f3cc84;
+        --background-color: #202020;
+    }
+    .cartao {
+        --background-color: #2e2e2e;
+    }
+
+    .cartao header h2 {
+        color: #ffa600;
+    }
+
+    header h1 {
+        --text-color: #ffa600;
+    }
+
+    footer p {
+        --text-color: #ffa600;
+    }
+}
+
+/*cartoes*/
+.cartao {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.cartao header p {
+    text-align: right;
+    font-size: 0.85rem;
+    color: #ffa600;
+    margin-bottom: 0.5rem;
+}
+
+.cartao p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/*botao*/
+.botaozin {
+    padding: 0.4rem 1rem;
+    border-radius: 1000px;
+    border: none;
+    background: linear-gradient(#fa9747, #ffae00);
+    color: rgb(78, 45, 0);
+    font-weight: bold;
+    cursor: default;
+}
+
+/*Configuração base*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+main {
+    max-width: 800px;
+    width: 90%;
+}
+
+footer p {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
